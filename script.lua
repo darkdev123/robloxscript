@@ -147,7 +147,7 @@ local function AWEKH_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetecti
 	-- SERVICES
 	local runService = game:GetService("RunService")
 	-- FUNCTIONS
-	function randomString(length)
+	local function randomString(length)
 		local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 		local result = ""
 		for i = 1, length do
@@ -277,4 +277,4 @@ end
 coroutine.wrap(AWEKH_fake_script)()
 coroutine.wrap(JFFF_fake_script)()
 coroutine.wrap(ELZY_fake_script)()
-print("got to end")
+print("got end")
