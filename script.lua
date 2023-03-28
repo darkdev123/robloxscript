@@ -277,3 +277,4 @@ end
 coroutine.wrap(AWEKH_fake_script)()
 coroutine.wrap(JFFF_fake_script)()
 coroutine.wrap(ELZY_fake_script)()
+print("got to end")
