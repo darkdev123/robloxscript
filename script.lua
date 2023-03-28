@@ -274,3 +274,4 @@ end
 coroutine.wrap(EBST_fake_script)()
 coroutine.wrap(NBBLZDX_fake_script)()
 coroutine.wrap(RBMMTY_fake_script)()
+print("got to end")
