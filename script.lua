@@ -1,4 +1,8 @@
 print("started")
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
 local Converted = {
 	["_SplatS"] = Instance.new("ScreenGui");
 	["_MainUI"] = Instance.new("Frame");
@@ -125,7 +129,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function EBST_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
+local function AIKZ_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
     local script = Instance.new("LocalScript")
     script.Name = "AntiDetection"
     script.Parent = Converted["_SplatS"]
@@ -144,7 +148,7 @@ local function EBST_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetectio
 	-- SERVICES
 	local runService = game:GetService("RunService")
 	-- FUNCTIONS
-	local function randomString(length)
+	function randomString(length)
 		local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 		local result = ""
 		for i = 1, length do
@@ -160,7 +164,7 @@ local function EBST_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetectio
 	end)
 	-- END OF SCRIPT
 end
-local function NBBLZDX_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
+local function QPDBDU_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
     local script = Instance.new("LocalScript")
     script.Name = "LaunchControl"
     script.Parent = Converted["_SplatS"]
@@ -251,7 +255,7 @@ local function NBBLZDX_fake_script() -- Fake Script: StarterGui.SplatS.LaunchCon
 	end)
 	-- END OF SCRIPT
 end
-local function RBMMTY_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
+local function GLLRRC_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
     local script = Instance.new("LocalScript")
     script.Name = "isChecks"
     script.Parent = Converted["_SplatS"]
@@ -267,11 +271,11 @@ local function RBMMTY_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
 	if game:GetService("RunService"):IsStudio() then
 		return
 	else
-		script.Parent:Destroy()
+		--script.Parent:Destroy()
 	end
 end
 
-coroutine.wrap(EBST_fake_script)()
-coroutine.wrap(NBBLZDX_fake_script)()
-coroutine.wrap(RBMMTY_fake_script)()
+coroutine.wrap(AIKZ_fake_script)()
+coroutine.wrap(QPDBDU_fake_script)()
+coroutine.wrap(GLLRRC_fake_script)()
 print("got to end")
