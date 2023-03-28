@@ -1,7 +1,4 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
-
--- Instances:
-
+print("started")
 local Converted = {
 	["_SplatS"] = Instance.new("ScreenGui");
 	["_MainUI"] = Instance.new("Frame");
@@ -128,7 +125,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function AWEKH_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
+local function EBST_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
     local script = Instance.new("LocalScript")
     script.Name = "AntiDetection"
     script.Parent = Converted["_SplatS"]
@@ -163,7 +160,7 @@ local function AWEKH_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetecti
 	end)
 	-- END OF SCRIPT
 end
-local function JFFF_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
+local function NBBLZDX_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
     local script = Instance.new("LocalScript")
     script.Name = "LaunchControl"
     script.Parent = Converted["_SplatS"]
@@ -254,7 +251,7 @@ local function JFFF_fake_script() -- Fake Script: StarterGui.SplatS.LaunchContro
 	end)
 	-- END OF SCRIPT
 end
-local function ELZY_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
+local function RBMMTY_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
     local script = Instance.new("LocalScript")
     script.Name = "isChecks"
     script.Parent = Converted["_SplatS"]
@@ -274,7 +271,6 @@ local function ELZY_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
 	end
 end
 
-coroutine.wrap(AWEKH_fake_script)()
-coroutine.wrap(JFFF_fake_script)()
-coroutine.wrap(ELZY_fake_script)()
-print("got end")
+coroutine.wrap(EBST_fake_script)()
+coroutine.wrap(NBBLZDX_fake_script)()
+coroutine.wrap(RBMMTY_fake_script)()
