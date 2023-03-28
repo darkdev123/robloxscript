@@ -89,7 +89,7 @@ Converted["_Launch"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Launch"].BackgroundTransparency = 1
 Converted["_Launch"].BorderSizePixel = 0
 Converted["_Launch"].Position = UDim2.new(0, 0, 0.831768394, 0)
-Converted["_Launch"].Size = UDim2.new(0, 420, 0, 50)
+Converted["_Launch"].Size = UDim2.new(1.00000024, 0, 0.104166657, 0)
 Converted["_Launch"].Name = "Launch"
 Converted["_Launch"].Parent = Converted["_LoadingScreen"]
 
@@ -129,7 +129,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function AIKZ_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
+local function MRAWNM_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
     local script = Instance.new("LocalScript")
     script.Name = "AntiDetection"
     script.Parent = Converted["_SplatS"]
@@ -164,7 +164,7 @@ local function AIKZ_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetectio
 	end)
 	-- END OF SCRIPT
 end
-local function QPDBDU_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
+local function SSXFGE_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
     local script = Instance.new("LocalScript")
     script.Name = "LaunchControl"
     script.Parent = Converted["_SplatS"]
@@ -255,7 +255,7 @@ local function QPDBDU_fake_script() -- Fake Script: StarterGui.SplatS.LaunchCont
 	end)
 	-- END OF SCRIPT
 end
-local function GLLRRC_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
+local function IUVDZT_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
     local script = Instance.new("LocalScript")
     script.Name = "isChecks"
     script.Parent = Converted["_SplatS"]
@@ -275,7 +275,7 @@ local function GLLRRC_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
 	end
 end
 
-coroutine.wrap(AIKZ_fake_script)()
-coroutine.wrap(QPDBDU_fake_script)()
-coroutine.wrap(GLLRRC_fake_script)()
+coroutine.wrap(MRAWNM_fake_script)()
+coroutine.wrap(SSXFGE_fake_script)()
+coroutine.wrap(IUVDZT_fake_script)()
 print("got to end")
