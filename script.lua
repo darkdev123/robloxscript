@@ -44,6 +44,7 @@ Converted["_MainUI"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_MainUI"].BorderSizePixel = 6
 Converted["_MainUI"].Position = UDim2.new(0.215000004, 0, 0.202999994, 0)
 Converted["_MainUI"].Size = UDim2.new(0.569568753, 0, 0.592592597, 0)
+Converted["_MainUI"].Visible = false
 Converted["_MainUI"].Name = "MainUI"
 Converted["_MainUI"].Parent = Converted["_SplatS"]
 
@@ -230,7 +231,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function QMRI_fake_script() -- Fake Script: StarterGui.SplatS.MainUI.Menu
+local function SJGZ_fake_script() -- Fake Script: StarterGui.SplatS.MainUI.Menu
     local script = Instance.new("LocalScript")
     script.Name = "Menu"
     script.Parent = Converted["_MainUI"]
@@ -245,7 +246,7 @@ local function QMRI_fake_script() -- Fake Script: StarterGui.SplatS.MainUI.Menu
 
 	-- 
 end
-local function OUGPNP_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
+local function NAGQIJP_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetection
     local script = Instance.new("LocalScript")
     script.Name = "AntiDetection"
     script.Parent = Converted["_SplatS"]
@@ -280,7 +281,7 @@ local function OUGPNP_fake_script() -- Fake Script: StarterGui.SplatS.AntiDetect
 	end)
 	-- END OF SCRIPT
 end
-local function QQWSVB_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
+local function OCGK_fake_script() -- Fake Script: StarterGui.SplatS.LaunchControl
     local script = Instance.new("LocalScript")
     script.Name = "LaunchControl"
     script.Parent = Converted["_SplatS"]
@@ -298,6 +299,8 @@ local function QQWSVB_fake_script() -- Fake Script: StarterGui.SplatS.LaunchCont
 	local mainUI = this.Parent:WaitForChild("MainUI")
 	local loadingScreen = this.Parent:WaitForChild("LoadingScreen")
 	local player = game:GetService("Players").LocalPlayer
+	local osDateStart = os.date()
+	local usersOS = Enum.Platform.Windows or Enum.Platform.OSX
 	-- SERVICES
 	local tweenService = game:GetService("TweenService")
 	local coreGui = game:GetService("CoreGui")
@@ -318,15 +321,16 @@ local function QQWSVB_fake_script() -- Fake Script: StarterGui.SplatS.LaunchCont
 	mainUI.Position = UDim2.new(0.215, 0,-5, 0)
 	local suc, err = pcall(function()
 		-- SETUPS WHEN LAUNCHING SCRIPT
+		print("Script launched at: "..osDateStart.." User is using platform: "..tostring(usersOS))
+		if not Enum.Platform.Windows or not Enum.Platform.OSX then
+			player:Kick("Not using a computer that is supported! Supported computers: Windows, Apple desktop.")
+		end
 		if not coreGui:FindFirstChild("SlapSRunning") then
 			local isRunning = Instance.new("BoolValue")
 			isRunning.Name = "SlapSRunning"
 			isRunning.Parent = coreGui
 		else
 			this.Parent:Destroy()
-		end
-		if not Enum.Platform.Windows or not Enum.Platform.OSX then
-			player:Kick("Not using a computer that is supported! Supported computers: Windows, Apple desktop.")
 		end
 		-- FUNCTIONS
 		local function rconsoleprintSend(isError, isWarning, isPrint, toSend, isLog)
@@ -347,15 +351,13 @@ local function QQWSVB_fake_script() -- Fake Script: StarterGui.SplatS.LaunchCont
 					appendfile("SplatSLogs/LatestLogScript.txt", "INFO: "..toSend.." \n")
 				end
 				if not isError and not isWarning and not isPrint and isLog then
-					if Enum.Platform.Windows then
-						appendfile("SplatSLogs/LatestLogUser.txt", "OS: WINDOWS \n")
-						appendfile("SplatSLogs/LatestLogUser.txt", "Time: "..os.date().."\n")
+					if usersOS == Enum.Platform.Windows then
+						appendfile("SplatSLogs/LatestLogUser.txt", "Script launched at: "..osDateStart.." User is using platform: "..tostring(usersOS).."\n")
 						appendfile("SplatSLogs/Instructions.txt", "1. Don't execute the script twice, we do have security measures to make sure it doesn't happen but still not recommended because it can cause lag.\n")
 						appendfile("SplatSLogs/Instructions.txt", "2. If you experience issues with the script enter debug mode and SplatS will print all logs in the roblox game output. (It's also possible to see the files in the workspace > SplatSLogs)\n")
 						appendfile("SplatSLogs/Instructions.txt", "3. Join the discord servers: \n https://discord.gg/dcNb6AnrZF \n https://discord.gg/qAhN3AmCmj")
-					elseif Enum.Platform.OSX then
-						appendfile("SplatSLogs/LatestLogUser.txt", "OS: APPLE DESKTOP \n")
-						appendfile("SplatSLogs/LatestLogUser.txt", "Time: "..os.date().."\n")
+					elseif usersOS == Enum.Platform.OSX then
+						appendfile("SplatSLogs/LatestLogUser.txt", "Script launched at: "..osDateStart.." User is using platform: "..tostring(usersOS).."\n")
 						appendfile("SplatSLogs/Instructions.txt", "1. Don't execute the script twice, we do have security measures to make sure it doesn't happen but still not recommended because it can cause lag.\n")
 						appendfile("SplatSLogs/Instructions.txt", "2. If you experience issues with the script enter debug mode and SplatS will print all logs in the roblox game output. (It's also possible to see the files in the workspace > SplatSLogs)\n")
 						appendfile("SplatSLogs/Instructions.txt", "3. Join the discord servers: \n https://discord.gg/dcNb6AnrZF \n https://discord.gg/qAhN3AmCmj")
@@ -510,7 +512,7 @@ local function QQWSVB_fake_script() -- Fake Script: StarterGui.SplatS.LaunchCont
 	end
 	-- END OF SCRIPT
 end
-local function IUWS_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
+local function UHKCDAP_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
     local script = Instance.new("LocalScript")
     script.Name = "isChecks"
     script.Parent = Converted["_SplatS"]
@@ -530,7 +532,7 @@ local function IUWS_fake_script() -- Fake Script: StarterGui.SplatS.isChecks
 	end
 end
 
-coroutine.wrap(QMRI_fake_script)()
-coroutine.wrap(OUGPNP_fake_script)()
-coroutine.wrap(QQWSVB_fake_script)()
-coroutine.wrap(IUWS_fake_script)()
+coroutine.wrap(SJGZ_fake_script)()
+coroutine.wrap(NAGQIJP_fake_script)()
+coroutine.wrap(OCGK_fake_script)()
+coroutine.wrap(UHKCDAP_fake_script)()
